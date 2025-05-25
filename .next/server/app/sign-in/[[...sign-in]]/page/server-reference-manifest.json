@@ -1,0 +1,49 @@
+{
+  "node": {
+    "7f53b8020dfcc9de131d5b3801346b39eb1aa30d04": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/sign-in/[[...sign-in]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      }
+    },
+    "7f6965e7ea2a80e3fd2041fd56c8ae276b428adb87": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/sign-in/[[...sign-in]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      }
+    },
+    "7fb3c6dba616708a4b085d9412c1269a7070e1f978": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/sign-in/[[...sign-in]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      }
+    },
+    "7fa47d1d8094ec51c693bd9b401ad6c2c2c005a8ef": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/sign-in/[[...sign-in]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}
