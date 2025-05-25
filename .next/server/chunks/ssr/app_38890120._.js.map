@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file:///home/neha/lms-app/app/subscription/page.tsx"],"sourcesContent":["import {PricingTable} from \"@clerk/nextjs\";\n\nconst Subscription = () => {\n    return (\n        <main>\n            <PricingTable />\n        </main>\n    )\n}\nexport default Subscription\n"],"names":[],"mappings":";;;;AAAA;;;AAEA,MAAM,eAAe;IACjB,qBACI,8OAAC;kBACG,cAAA,8OAAC,sLAAA,CAAA,eAAY;;;;;;;;;;AAGzB;uCACe","debugId":null}}]
-}
