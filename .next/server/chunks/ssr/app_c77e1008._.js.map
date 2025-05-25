@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file:///home/neha/lms-app/app/sign-in/%5B%5B...sign-in%5D%5D/page.tsx"],"sourcesContent":["import { SignIn } from '@clerk/nextjs'\n\nexport default function Page() {\n    return <main className=\"flex items-center justify-center\">\n        <SignIn />\n    </main>\n}"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACpB,qBAAO,8OAAC;QAAK,WAAU;kBACnB,cAAA,8OAAC,sLAAA,CAAA,SAAM;;;;;;;;;;AAEf","debugId":null}}]
+}

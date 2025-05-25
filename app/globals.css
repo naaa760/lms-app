@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -223,4 +224,26 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+/* Add these new styles */
+.stats-card {
+  @apply border border-gray-200 rounded-xl p-4 flex flex-col gap-2 h-fit
+  hover:border-gray-300 transition-all duration-300
+  hover:shadow-lg bg-white;
+}
+
+.accordion-card {
+  @apply rounded-xl border border-gray-200 overflow-hidden
+  hover:shadow-md transition-all duration-300 bg-white;
+}
+
+/* If you want to override the default Accordion styles */
+.accordion-card [data-state="open"] {
+  @apply bg-gradient-to-r from-purple-50 to-pink-50;
+}
+
+.companion-delete {
+  @apply px-2 bg-red-600 rounded-4xl flex items-center h-full aspect-square cursor-pointer 
+  hover:bg-red-700 transition-colors duration-300;
 }
