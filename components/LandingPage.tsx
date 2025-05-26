@@ -23,6 +23,13 @@ const LandingPage = () => {
         </div>
       </div>
 
+      {/* Light Effect Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-white/30 via-transparent to-amber-100/20 pointer-events-none"></div>
+
+      {/* Radial Gradient Accents */}
+      <div className="absolute top-40 left-20 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-40 right-20 w-96 h-96 bg-stone-300/20 rounded-full blur-3xl"></div>
+
       {/* Content */}
       <div className="relative z-10">
         {/* Hero Section with Bottom Gradient */}

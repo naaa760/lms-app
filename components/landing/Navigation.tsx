@@ -22,7 +22,6 @@ const Navigation = () => {
               <div className="text-2xl font-bold">
                 <span className="text-stone-800">EDU</span>
                 <span className="text-amber-700">NO</span>
-                <span className="text-amber-700 text-3xl">.</span>
               </div>
             </div>
 

@@ -33,13 +33,31 @@ export default async function RootLayout({
       lang="en"
       className={`${bricolage.variable} ${inter.variable} ${playfair.variable} antialiased`}
     >
-      <body className="bg-gradient-to-br from-stone-200 via-amber-100 to-stone-100">
-        <div className="fixed inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
-        <div className="fixed inset-0 bg-gradient-to-b from-transparent via-amber-900/5 to-stone-900/10 pointer-events-none" />
+      <body
+        className={
+          userId
+            ? "bg-gradient-to-br from-stone-200 via-amber-100 to-stone-100"
+            : ""
+        }
+      >
+        <div
+          className={
+            userId
+              ? "fixed inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none"
+              : ""
+          }
+        />
+        <div
+          className={
+            userId
+              ? "fixed inset-0 bg-gradient-to-b from-transparent via-amber-900/5 to-stone-900/10 pointer-events-none"
+              : ""
+          }
+        />
         <ClerkProvider appearance={{ variables: { colorPrimary: "#fe5933" } }}>
           <div className="relative min-h-screen">
             {userId && <Navbar />}
-            <div className="pt-24">{children}</div>
+            <div className={userId ? "pt-24" : ""}>{children}</div>
           </div>
         </ClerkProvider>
       </body>
