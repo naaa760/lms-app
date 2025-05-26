@@ -20,47 +20,62 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-bl from-amber-200/30 via-transparent to-orange-300/40 pointer-events-none"></div>
       <Navigation />
 
-      <div className="container mx-auto px-6 pt-32 pb-16">
+      <div className="container mx-auto px-6 pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
-          <div className="space-y-8">
-            <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium">
-              #1 Learning Platform
+          <div className="space-y-8 relative min-h-[600px]">
+            {/* Background Line Image */}
+            <div className="absolute top-0 left-0 w-full h-full -z-10">
+              <Image
+                src="/line.png"
+                alt="Background Pattern"
+                fill
+                style={{ objectFit: "contain" }}
+                className="opacity-20"
+                priority
+              />
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight font-serif">
-              Smart Learning
-              <br />
-              Deeper & More
-              <br />
-              <span className="text-orange-500">-Amazing</span>
-            </h1>
+            {/* Content Container to ensure text stays on top */}
+            <div className="relative z-10">
+              <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium">
+                #1 Learning Platform
+              </div>
 
-            <p className="text-lg text-gray-600 max-w-lg font-light leading-relaxed">
-              Proactively deploy unique intellectual capital without
-              enterprise-class bricks-and-clicks synergy. Enthusiastically
-              revolutionize intuitive.
-            </p>
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight font-serif mt-8">
+                Smart Learning
+                <br />
+                Deeper & More
+                <br />
+                <span className="text-orange-500">-Amazing</span>
+              </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-full text-lg font-medium">
-                Start Free Trial →
-              </Button>
-              <Button
-                variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3 rounded-full text-lg font-medium flex items-center gap-2"
-              >
-                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
-                </div>
-                How It Work
-              </Button>
+              <p className="text-lg text-gray-600 max-w-lg font-light leading-relaxed mt-8">
+                Proactively deploy unique intellectual capital without
+                enterprise-class bricks-and-clicks synergy. Enthusiastically
+                revolutionize intuitive.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <Button className="bg-amber-700 hover:bg-amber-950 text-white px-8 py-3 rounded-full text-lg font-medium">
+                  Start Free Trial →
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3 rounded-full text-lg font-medium flex items-center gap-2"
+                >
+                  <div className="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                    </svg>
+                  </div>
+                  How It Work
+                </Button>
+              </div>
             </div>
           </div>
 

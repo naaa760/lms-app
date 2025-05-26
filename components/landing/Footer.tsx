@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   const paymentMethods = [
@@ -9,9 +8,6 @@ const Footer = () => {
     { name: "Google Pay", color: "bg-gray-600" },
     { name: "Apple Pay", color: "bg-gray-900" },
     { name: "Stripe", color: "bg-purple-600" },
-    { name: "Pay", color: "bg-orange-500" },
-    { name: "Paytm", color: "bg-blue-500" },
-    { name: "Razico", color: "bg-green-500" }
   ];
 
   return (
@@ -27,13 +23,12 @@ const Footer = () => {
                 <span className="text-orange-500 text-3xl">.</span>
               </div>
             </div>
-            
+
             <p className="text-gray-600 leading-relaxed">
-              We're always in search for talented and motivated 
-              people. Don't be shy introduce yourself Subscribe 
-              to our newsletter.
+              We&apos;re always in search for talented and motivated people.
+              Don&apos;t be shy introduce yourself Subscribe to our newsletter.
             </p>
-            
+
             <div>
               <h4 className="font-semibold text-gray-900 mb-3">Social Media</h4>
               <div className="flex gap-3">
@@ -52,48 +47,148 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Company Info Links */}
           <div>
             <h4 className="font-semibold text-gray-900 mb-6">Company Info</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Courses</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Instructor</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">About LmsZone</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Become Instructor</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Faq</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Instructor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  About LmsZone
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Become Instructor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Faq
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           {/* Top Categories */}
           <div>
             <h4 className="font-semibold text-gray-900 mb-6">Top Categories</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Development</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Design</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Marketing</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">IT & Software</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Health & Fitness</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Math & Logic</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Personal Development</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Marketing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  IT & Software
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Health & Fitness
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Math & Logic
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Personal Development
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           {/* Download App */}
           <div>
-            <h4 className="font-semibold text-gray-900 mb-6">Download the LMS App</h4>
+            <h4 className="font-semibold text-gray-900 mb-6">
+              Download the LMS App
+            </h4>
             <p className="text-gray-600 mb-6">
-              Join us on this journey of discovery as we 
-              explore the latest trend
+              Join us on this journey of discovery as we explore the latest
+              trend
             </p>
-            
+
             <div className="space-y-3 mb-6">
-              <div className="text-gray-600">📍 254 Lillian Blvd, Holbrook</div>
-              <div className="text-gray-600">📞 +880 1179 522 512</div>
+              <div className="text-gray-600">📍 India</div>
+              <div className="text-gray-600">📞 +91 8109138725</div>
             </div>
-            
+
             <div className="flex gap-3">
               <button className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-600 transition-colors">
                 📱 Google Play
@@ -104,18 +199,23 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Payment Methods */}
         <div className="border-t border-gray-200 pt-8">
-          <h4 className="font-semibold text-gray-900 mb-4">We Accept Payment Gateway</h4>
+          <h4 className="font-semibold text-gray-900 mb-4">
+            We Accept Payment Gateway
+          </h4>
           <div className="flex flex-wrap gap-3 mb-8">
             {paymentMethods.map((method, index) => (
-              <div key={index} className={`${method.color} text-white px-4 py-2 rounded-lg text-sm font-medium`}>
+              <div
+                key={index}
+                className={`${method.color} text-white px-4 py-2 rounded-lg text-sm font-medium`}
+              >
                 {method.name}
               </div>
             ))}
           </div>
-          
+
           <div className="text-center text-gray-600 text-sm">
             © 2024 The Themtags. All rights reserved.
           </div>

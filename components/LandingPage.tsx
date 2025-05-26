@@ -1,10 +1,10 @@
 import React from "react";
 import Hero from "../components/landing/Hero";
 import CourseGrid from "../components/landing/CourseGrid";
-import Categories from "../components/landing/Categories";
+
 import GrowthSection from "../components/landing/GrowthSection";
 import Testimonials from "../components/landing/Testimonials";
-import FAQ from "../components/landing/FAQ";
+
 import Footer from "../components/landing/Footer";
 
 const LandingPage = () => {
@@ -32,13 +32,41 @@ const LandingPage = () => {
 
       {/* Content */}
       <div className="relative z-10">
-        <Hero />
-        <CourseGrid />
-        <Categories />
-        <GrowthSection />
-        <Testimonials />
-        <FAQ />
-        <Footer />
+        {/* Hero Section with Bottom Gradient */}
+        <div className="relative">
+          <Hero />
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent" />
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-amber-50/50 to-transparent" />
+          <CourseGrid />
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
+        </div>
+
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
+
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-amber-50/30 to-transparent" />
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
+          <GrowthSection />
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-stone-50 to-transparent" />
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
+          <Testimonials />
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-50 to-transparent" />
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
+
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-amber-50/20 to-transparent" />
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
+          <Footer />
+        </div>
       </div>
     </div>
   );
