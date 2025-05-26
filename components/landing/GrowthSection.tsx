@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ui/button";
+
 import Image from "next/image";
 
 const GrowthSection = () => {
@@ -54,7 +54,7 @@ const GrowthSection = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800 font-serif">
-                      13.5k+
+                      15+
                     </div>
                     <div className="text-sm text-gray-500 font-light">
                       Number of courses
@@ -71,7 +71,7 @@ const GrowthSection = () => {
           <div className="space-y-8">
             <div>
               <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium">
-                Why Us
+                Why This Platform
               </span>
             </div>
 
@@ -81,7 +81,7 @@ const GrowthSection = () => {
               <br />
               Academy & Accelerate to
               <br />
-              your Better future
+              your Better future with Best AI Tutor
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed font-light">
@@ -90,14 +90,10 @@ const GrowthSection = () => {
             </p>
 
             <p className="text-gray-600 leading-relaxed font-light">
-              Our dynamic educational platform offers you the tools and
-              resources to propel yourself towards a brighter future. With
-              expert guidance & a supportive community.
+              My dynamic educational platform offers you the tools and resources
+              to propel yourself towards a brighter future. With expert guidance
+              video and audio & a supportive community.
             </p>
-
-            <Button className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-full font-medium">
-              Browse Course
-            </Button>
           </div>
         </div>
       </div>

@@ -68,7 +68,6 @@ const CourseGrid = () => {
 
   return (
     <section className="relative py-20">
-      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/str.jpg"
@@ -79,8 +78,41 @@ const CourseGrid = () => {
           quality={100}
         />
       </div>
+      {/* Aesthetic Grid Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Main Grid Pattern */}
+        <div className="absolute inset-0 opacity-[0.07]">
+          <div className="h-full w-full grid grid-cols-[repeat(40,minmax(0,1fr))] gap-px">
+            {Array.from({ length: 400 }).map((_, i) => (
+              <div key={i} className="bg-gray-900/20" />
+            ))}
+          </div>
+        </div>
 
-      {/* Content */}
+        {/* Diagonal Lines */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-gray-500/20 to-transparent transform -rotate-45" />
+          <div className="absolute top-0 left-2/4 w-px h-full bg-gradient-to-b from-transparent via-gray-500/20 to-transparent transform -rotate-45" />
+          <div className="absolute top-0 left-3/4 w-px h-full bg-gradient-to-b from-transparent via-gray-500/20 to-transparent transform -rotate-45" />
+        </div>
+
+        {/* Radial Gradients for Depth */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-200/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-stone-300/10 rounded-full blur-3xl" />
+
+        {/* Subtle Dot Pattern */}
+        <div className="absolute inset-0 opacity-[0.05]">
+          <div className="h-full w-full grid grid-cols-[repeat(20,minmax(0,1fr))] grid-rows-[repeat(20,minmax(0,1fr))]">
+            {Array.from({ length: 400 }).map((_, i) => (
+              <div key={i} className="flex items-center justify-center">
+                <div className="w-1 h-1 rounded-full bg-gray-900" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Content Container */}
       <div className="container mx-auto px-6 relative">
         {/* Header */}
         <div className="text-center mb-16">
@@ -102,9 +134,12 @@ const CourseGrid = () => {
             </div>
             <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white">
               <option>All Categories</option>
-              <option>Design</option>
-              <option>Development</option>
-              <option>Marketing</option>
+              <option>Maths</option>
+              <option>Coding</option>
+              <option>Language</option>
+              <option>Science</option>
+              <option>History</option>
+              <option>Economics</option>
             </select>
             <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">
               🔍
@@ -117,45 +152,59 @@ const CourseGrid = () => {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:scale-105"
+              className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
             >
-              {/* Course Image */}
-              <div className="h-48 relative">
+              {/* Course Image Container */}
+              <div className="h-48 relative overflow-hidden">
                 <Image
                   src={course.imageSrc}
                   alt={course.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+
+                {/* Price Tag */}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-amber-600 font-semibold">
+                    {course.price}
+                  </span>
+                </div>
               </div>
 
               {/* Course Content */}
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="flex text-yellow-400 text-sm">
+              <div className="p-6 space-y-4">
+                {/* Rating */}
+                <div className="flex items-center gap-2">
+                  <div className="flex text-amber-400">
                     {"★".repeat(Math.floor(course.rating))}
                   </div>
-                  <span className="text-sm text-gray-600">
-                    {course.rating} ({course.reviews})
+                  <span className="text-sm text-gray-600 font-medium">
+                    {course.rating} ({course.reviews} reviews)
                   </span>
                 </div>
 
-                <h3 className="text-lg font-semibold text-gray-900 mb-4 line-clamp-2 group-hover:text-amber-700 transition-colors">
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors duration-300 line-clamp-2">
                   {course.title}
                 </h3>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                    <span className="text-sm text-gray-600">
-                      {course.instructor}
-                    </span>
-                  </div>
-                  <div className="text-lg font-bold text-orange-500">
-                    {course.price}
-                  </div>
+                {/* Instructor */}
+                <div className="flex items-center justify-between pt-2">
+                  <span className="text-sm text-gray-600 italic">
+                    by {course.instructor}
+                  </span>
+
+                  {/* Enroll Button */}
+                  <button className="text-sm font-medium text-amber-600 hover:text-amber-700 transition-colors">
+                    Enroll Now →
+                  </button>
                 </div>
               </div>
+
+              {/* Hover Effect Overlay */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-amber-400/20 rounded-2xl transition-all duration-300" />
             </div>
           ))}
         </div>

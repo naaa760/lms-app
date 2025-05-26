@@ -12,23 +12,50 @@ const CompanionsLibrary = async ({ searchParams }: SearchParams) => {
   const companions = await getAllCompanions({ subject, topic });
 
   return (
-    <main>
-      <section className="flex justify-between gap-4 max-sm:flex-col">
-        <h1>Companion Library</h1>
-        <div className="flex gap-4">
-          <SearchInput />
-          <SubjectFilter />
+    <main className="min-h-screen relative">
+      {/* Decorative grid and shapes */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Grid pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#000_1px,transparent_0)] bg-[size:32px_32px] opacity-[0.03]" />
+
+        {/* Decorative shapes */}
+        <div className="absolute top-20 right-10 w-[400px] h-[400px] rounded-full bg-amber-700/5 blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-[300px] h-[300px] rounded-full bg-stone-700/5 blur-3xl" />
+        <div className="absolute top-1/3 left-1/4 w-[200px] h-[200px] rounded-[40%] bg-amber-500/5 rotate-45 blur-2xl" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-12">
+        {/* Header section with oval corners */}
+        <div className="bg-gradient-to-br from-white/60 via-amber-50/60 to-stone-50/60 rounded-[30px] p-8 mb-12 shadow-xl border border-amber-200/20 backdrop-blur-sm">
+          <section className="flex justify-between gap-4 max-sm:flex-col">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-amber-900 to-stone-800 bg-clip-text text-transparent">
+              Companion Library
+            </h1>
+            <div className="flex gap-4">
+              <SearchInput />
+              <SubjectFilter />
+            </div>
+          </section>
         </div>
-      </section>
-      <section className="companions-grid">
-        {companions.map((companion) => (
-          <CompanionCard
-            key={companion.id}
-            {...companion}
-            color={getSubjectColor(companion.subject)}
-          />
-        ))}
-      </section>
+
+        {/* Grid with oval corners */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+          {/* Background pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(45deg,#000_1px,transparent_1px)] bg-[size:20px_20px] opacity-[0.02] rounded-[40px]" />
+
+          {companions.map((companion) => (
+            <div
+              key={companion.id}
+              className="transform hover:-translate-y-2 transition-all duration-500"
+            >
+              <CompanionCard
+                {...companion}
+                color={getSubjectColor(companion.subject)}
+              />
+            </div>
+          ))}
+        </section>
+      </div>
     </main>
   );
 };

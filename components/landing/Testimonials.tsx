@@ -34,7 +34,7 @@ const Testimonials = () => {
             Testimonials
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mt-4 mb-6 font-serif">
-            See why We&apos;re rated #1 in
+            See why I&apos;ll rated #1 in
             <br />
             Online <span className="text-orange-500">Platform tech</span>
           </h2>
@@ -49,9 +49,9 @@ const Testimonials = () => {
             </div>
 
             <div className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto font-light">
-              Our dynamic educational platform offers you the tools and
-              resources to propel yourself towards a brighter future. With
-              expert guidance & a supportive community,
+              My dynamic educational platform offers you the tools and resources
+              to propel yourself towards a brighter future. With expert guidance
+              video and audio & a supportive community,
             </div>
 
             <div className="mt-8">

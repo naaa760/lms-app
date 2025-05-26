@@ -24,79 +24,88 @@ const Profile = async () => {
   const bookmarkedCompanions = await getBookmarkedCompanions(user.id);
 
   return (
-    <div className="min-h-screen w-full bg-journey-pattern bg-cover bg-fixed bg-center">
-      {/* Beautiful Transparent Navbar */}
-      <nav className="backdrop-blur-md bg-white/30 rounded-[2rem] mx-8 mt-8 p-6 border border-white/40 shadow-lg">
-        <div className="flex justify-between items-center gap-8 max-sm:flex-col">
-          <div className="flex gap-6 items-center">
-            <div className="relative group">
-              <Image
-                src={user.imageUrl}
-                alt={user.firstName!}
-                width={110}
-                height={110}
-                className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 z-10"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="font-bold text-4xl bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text font-serif">
-                {user.firstName} {user.lastName}
-              </h1>
-              <p className="text-sm text-white/80 hover:text-white transition-colors duration-300 font-light">
-                {user.emailAddresses[0].emailAddress}
-              </p>
-            </div>
-          </div>
+    <main className="min-h-screen relative">
+      {/* Decorative Elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Rich warm gradients */}
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-amber-800/10 via-stone-700/5 to-transparent blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-stone-800/10 via-amber-700/5 to-transparent blur-3xl" />
 
-          {/* Stats Cards */}
-          <div className="flex gap-4 max-sm:w-full">
-            <div className="stats-card-journey group">
-              <div className="flex gap-3 items-center">
-                <div className="p-3 bg-green-100/80 rounded-xl group-hover:bg-green-200/80 transition-all duration-300">
-                  <Image
-                    src="/icons/check.svg"
-                    alt="checkmark"
-                    width={24}
-                    height={24}
-                    className="group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <p className="text-4xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">
-                  {sessionHistory.length}
-                </p>
+        {/* Grid patterns */}
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,#000_1px,transparent_1px)] bg-[size:20px_20px] opacity-[0.02]" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-12">
+        {/* User Stats Card with oval corners */}
+        <div className="glass-card mb-12 p-8 bg-gradient-to-br from-white/70 via-amber-50/70 to-stone-50/70 rounded-[30px]">
+          <div className="flex justify-between items-center gap-8 max-sm:flex-col">
+            <div className="flex gap-6 items-center">
+              <div className="relative group">
+                <Image
+                  src={user.imageUrl}
+                  alt={user.firstName!}
+                  width={110}
+                  height={110}
+                  className="rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 z-10"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-stone-500/20 rounded-2xl group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <div className="text-sm text-white/70 group-hover:text-white transition-colors duration-300">
-                Lessons completed
+              <div className="flex flex-col gap-3">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-amber-800 to-stone-700 bg-clip-text text-transparent">
+                  {user.firstName} {user.lastName}
+                </h1>
+                <p className="text-stone-600">
+                  {user.emailAddresses[0].emailAddress}
+                </p>
               </div>
             </div>
-            <div className="stats-card-journey group">
-              <div className="flex gap-3 items-center">
-                <div className="p-3 bg-blue-100/80 rounded-xl group-hover:bg-blue-200/80 transition-all duration-300">
-                  <Image
-                    src="/icons/cap.svg"
-                    alt="cap"
-                    width={24}
-                    height={24}
-                    className="group-hover:scale-110 transition-transform duration-300"
-                  />
+
+            {/* Stats Cards */}
+            <div className="flex gap-4 max-sm:w-full">
+              <div className="glass-card p-6 group hover:bg-white/70">
+                <div className="flex gap-3 items-center">
+                  <div className="p-3 bg-amber-100 rounded-xl group-hover:bg-amber-200 transition-all duration-300">
+                    <Image
+                      src="/icons/check.svg"
+                      alt="checkmark"
+                      width={24}
+                      height={24}
+                      className="group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  <p className="text-4xl font-bold text-stone-800">
+                    {sessionHistory.length}
+                  </p>
                 </div>
-                <p className="text-4xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
-                  {companions.length}
-                </p>
+                <div className="text-sm text-stone-600">Lessons completed</div>
               </div>
-              <div className="text-sm text-white/70 group-hover:text-white transition-colors duration-300">
-                Companions created
+              <div className="glass-card p-6 group hover:bg-white/70">
+                <div className="flex gap-3 items-center">
+                  <div className="p-3 bg-blue-100 rounded-xl group-hover:bg-blue-200 transition-all duration-300">
+                    <Image
+                      src="/icons/cap.svg"
+                      alt="cap"
+                      width={24}
+                      height={24}
+                      className="group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  <p className="text-4xl font-bold text-stone-800">
+                    {companions.length}
+                  </p>
+                </div>
+                <div className="text-sm text-stone-600">Companions created</div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
 
-      {/* Main Content */}
-      <main className="min-lg:w-3/4 p-6 space-y-6 mx-auto">
+        {/* Accordion Sections with oval corners */}
         <Accordion type="multiple" className="space-y-4">
-          <AccordionItem value="bookmarks" className="journey-card">
+          <AccordionItem
+            value="bookmarks"
+            className="glass-card overflow-hidden bg-gradient-to-br from-white/60 via-amber-50/60 to-stone-50/60 rounded-[25px]"
+          >
             <AccordionTrigger className="text-2xl font-bold hover:text-purple-400 transition-colors duration-300 px-6">
               Bookmarked Companions {`(${bookmarkedCompanions.length})`}
             </AccordionTrigger>
@@ -107,7 +116,10 @@ const Profile = async () => {
               />
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="recent" className="journey-card">
+          <AccordionItem
+            value="recent"
+            className="glass-card bg-gradient-to-br from-white/60 via-amber-50/60 to-stone-50/60 rounded-[25px]"
+          >
             <AccordionTrigger className="text-2xl font-bold hover:text-purple-400 transition-colors duration-300 px-6">
               Recent Sessions
             </AccordionTrigger>
@@ -118,7 +130,10 @@ const Profile = async () => {
               />
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="companions" className="journey-card">
+          <AccordionItem
+            value="companions"
+            className="glass-card bg-gradient-to-br from-white/60 via-amber-50/60 to-stone-50/60 rounded-[25px]"
+          >
             <AccordionTrigger className="text-2xl font-bold hover:text-purple-400 transition-colors duration-300 px-6">
               My Companions {`(${companions.length})`}
             </AccordionTrigger>
@@ -127,8 +142,8 @@ const Profile = async () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 

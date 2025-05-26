@@ -96,20 +96,20 @@ const Hero = () => {
         <div className="mt-20">
           <div className="text-center mb-8">
             <span className="bg-teal-100 text-teal-600 px-4 py-2 rounded-full text-sm font-medium">
-              About Us
+              About Me
             </span>
           </div>
 
           <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
-            We are passionate about empowering learners{" "}
-            <strong>Worldwide</strong> with high-quality, accessible & engaging
-            education. Our mission offering a diverse range of courses.
+            I am passionate about empowering learners <strong>Worldwide</strong>{" "}
+            with high-quality, accessible & engaging education. My mission
+            offering a diverse range of courses.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-900 mb-2 font-serif">
-                25+
+                3+
               </div>
               <div className="text-gray-600 font-light">
                 Years of eLearning
@@ -119,7 +119,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-900 mb-2 font-serif">
-                56k
+                10+
               </div>
               <div className="text-gray-600 font-light">
                 Students Enrolled in
@@ -129,7 +129,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-gray-900 mb-2 font-serif">
-                170+
+                10+
               </div>
               <div className="text-gray-600 font-light">
                 Experienced Teacher&apos;s
