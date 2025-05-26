@@ -16,7 +16,6 @@ const Page = async () => {
   if (!userId) {
     return <LandingPage />;
   }
-
   // If logged in, show existing home page content
   const companions = await getAllCompanions({ limit: 3 });
   const recentSessionsCompanions = await getRecentSessions(10);
