@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Converso",
+  title: "Eduno",
   description: "Real-time AI Teaching Platform",
 };
 

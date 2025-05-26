@@ -13,14 +13,15 @@ const Navbar = () => {
             <Link href="/">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/logo.svg"
+                  src="/logo.png"
                   alt="logo"
                   width={38}
                   height={38}
                   className="hover:scale-110 transition-transform duration-300"
+                  priority
                 />
                 <span className="text-xl font-semibold bg-gradient-to-r from-emerald-600 to-emerald-900 bg-clip-text text-transparent">
-                  Converso
+                  Eduno
                 </span>
               </div>
             </Link>

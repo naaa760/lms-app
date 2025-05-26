@@ -3,6 +3,7 @@ import CompanionCard from "@/components/CompanionCard";
 import { getSubjectColor } from "@/lib/utils";
 import SearchInput from "@/components/SearchInput";
 import SubjectFilter from "@/components/SubjectFilter";
+import Image from "next/image";
 
 const CompanionsLibrary = async ({ searchParams }: SearchParams) => {
   const filters = await searchParams;
@@ -21,7 +22,17 @@ const CompanionsLibrary = async ({ searchParams }: SearchParams) => {
         {/* Decorative shapes */}
         <div className="absolute top-20 right-10 w-[400px] h-[400px] rounded-full bg-amber-700/5 blur-3xl" />
         <div className="absolute bottom-20 left-10 w-[300px] h-[300px] rounded-full bg-stone-700/5 blur-3xl" />
-        <div className="absolute top-1/3 left-1/4 w-[200px] h-[200px] rounded-[40%] bg-amber-500/5 rotate-45 blur-2xl" />
+
+        {/* Decorative Image */}
+        <div className="absolute top-40 right-0 -rotate-[10deg] opacity-[0.07]">
+          <Image
+            src="/li1.png"
+            alt="Decorative"
+            width={500}
+            height={500}
+            className="object-contain"
+          />
+        </div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-12">

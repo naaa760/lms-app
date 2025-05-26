@@ -15,9 +15,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Multiple Light Effects */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-white/30 via-transparent to-stone-300/50 pointer-events-none"></div>
-      <div className="absolute inset-0 bg-gradient-to-bl from-amber-200/30 via-transparent to-orange-300/40 pointer-events-none"></div>
       <Navigation />
 
       <div className="container mx-auto px-6 pt-20 pb-16">

@@ -52,7 +52,7 @@ const CompanionCard = ({
           </div>
           <button
             onClick={handleBookmark}
-            className="p-2 rounded-full bg-amber-50 hover:bg-amber-100 transition-all duration-300"
+            className="p-2 rounded-full bg-stone-100 hover:bg-stone-200 transition-all duration-300 shadow-sm"
           >
             <Image
               src={
@@ -63,7 +63,10 @@ const CompanionCard = ({
               alt="bookmark"
               width={16}
               height={16}
-              className="transition-transform duration-300 group-hover:scale-110"
+              className={`${
+                bookmarked ? "opacity-100" : "opacity-70"
+              } transition-opacity duration-300`}
+              style={{ filter: "brightness(0.2)" }}
             />
           </button>
         </div>
