@@ -25,3 +25,17 @@ Progress tracking
 Session history
 Bookmarked companions
 Performance analytics
+
+
+🛠️ Tech Stack
+Frontend
+Next.js 14 (App Router)
+TypeScript
+Tailwind CSS
+Clerk Authentication
+Shadcn UI Components
+Backend
+AI Integration
+MongoDB Database
+RESTful APIs
+Secure Authentication
