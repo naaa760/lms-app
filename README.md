@@ -2,9 +2,9 @@
 
 ![image](https://github.com/user-attachments/assets/5d2b5f8a-fe8f-4387-b063-d238e151222d)
 
-❗ Here is the link of the project: https://lms-app-navy.vercel.app/
+❗ Here is the link to the project: https://lms-app-navy.vercel.app/
 
-❗ Here is the link of the video of the Project: https://drive.google.com/file/d/1R4gZ1vKUudm5vOJcM3bDc1S_SnvH10k7/view?usp=drivesdk
+❗ Here is the link to the video of the Project: https://drive.google.com/file/d/1R4gZ1vKUudm5vOJcM3bDc1S_SnvH10k7/view?usp=drivesdk
 
 
 ## 🌟 Overview
@@ -28,30 +28,34 @@
 - ⭐ Search & Filters: Quickly find tutors using smart search and filters.
 
 
-Subject Coverage
-Mathematics & Sciences
-Languages & Literature
-History & Social Studies
-Coding & Technology
-Economics & Business
+## Subject Coverage
+
+- Mathematics & Sciences
+- Languages & Literature
+- History & Social Studies
+- Coding & Technology
+- Economics & Business
+  
+- Smart Learning Journey
+- Progress tracking
+- Session History
+- Bookmarked companions
+- Performance Analytics
 
 
-Smart Learning Journey
-Progress tracking
-Session history
-Bookmarked companions
-Performance analytics
+## 🛠️ Tech Stack
 
+-- Frontend
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Clerk Authentication
+- Shadcn UI Components
 
-🛠️ Tech Stack
-Frontend
-Next.js 14 (App Router)
-TypeScript
-Tailwind CSS
-Clerk Authentication
-Shadcn UI Components
-Backend
-AI Integration
-MongoDB Database
-RESTful APIs
-Secure Authentication
+  
+-- Backend
+- AI Integration with VAPI
+- SENTRY
+- SUPABASE
+- Secure Authentication
+- Zod
