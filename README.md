@@ -18,3 +18,10 @@ Languages & Literature
 History & Social Studies
 Coding & Technology
 Economics & Business
+
+
+Smart Learning Journey
+Progress tracking
+Session history
+Bookmarked companions
+Performance analytics
