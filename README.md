@@ -10,3 +10,11 @@ AI Learning Companions
 Personalized AI tutors for different subjects
 Real-time conversations and explanations
 Adaptive learning paths
+
+
+Subject Coverage
+Mathematics & Sciences
+Languages & Literature
+History & Social Studies
+Coding & Technology
+Economics & Business
