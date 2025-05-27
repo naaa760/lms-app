@@ -7,11 +7,19 @@
 
 
 
-✨ Key Features
-AI Learning Companions
-Personalized AI tutors for different subjects
-Real-time conversations and explanations
-Adaptive learning paths
+## ✨ Key Features
+
+- ⭐ AI Voice Tutors: Learn with AI-powered voice agents tailored to your chosen subjects.
+- ⭐ Authentication: Secure sign-up/sign-in via Clerk, with support for Google and more.
+- ⭐ Subscriptions: Manage plans, upgrades, and payments easily with Stripe.
+- ⭐ Bookmarks & History: Save favorite tutors and revisit past sessions anytime.
+- ⭐ Reusable Components: Modular codebase with reusable components for faster dev.
+- ⭐ Create Tutors: Build custom AI tutors by choosing subject, topic, and tone.
+- ⭐ Responsive Design: Optimized to work smoothly across all device sizes.
+- ⭐ Real-time Database: Supabase handles live data and storage needs.
+- ⭐ Modern UI: Sleek design using Tailwind CSS and shadcn/ui components.
+- ⭐ Scalable Stack: Built with Next.js for speed, performance, and scalability.
+- ⭐ Search & Filters: Quickly find tutors using smart search and filters.
 
 
 Subject Coverage
