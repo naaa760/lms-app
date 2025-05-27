@@ -1,5 +1,11 @@
 ## EDUNO - AI-Powered Learning Platform 🎓
 
+![image](https://github.com/user-attachments/assets/5d2b5f8a-fe8f-4387-b063-d238e151222d)
+
+❗ Here is the link of the project: https://lms-app-navy.vercel.app/
+
+❗ Here is the link of the video of the Project: https://drive.google.com/file/d/1R4gZ1vKUudm5vOJcM3bDc1S_SnvH10k7/view?usp=drivesdk
+
 
 ## 🌟 Overview
 
