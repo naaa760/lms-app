@@ -1,4 +1,4 @@
-## EDUNO - AI-Powered Learning Platform 🎓
+## EDUNO - SAAS Application - AI-Powered Learning Platform 🎓
 
 ![image](https://github.com/user-attachments/assets/5d2b5f8a-fe8f-4387-b063-d238e151222d)
 
