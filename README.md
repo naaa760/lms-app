@@ -1,8 +1,10 @@
 ## EDUNO - AI-Powered Learning Platform 🎓
 
 
-🌟 Overview
-EDUNO is a modern, AI-powered educational platform that revolutionizes the way students learn. By combining cutting-edge AI technology with an intuitive user interface, EDUNO provides personalized learning experiences for students across various subjects.
+## 🌟 Overview
+
+- EDUNO is a SaaS Learning Management System (LMS) from scratch using Next.js, Supabase, Stripe, and Vapi. This platform includes robust user authentication powered by Supabase, seamless subscription and payment processing through Stripe, and real-time interactive learning sessions enhanced by Vapi. You'll also integrate an AI voice agent to deliver dynamic, voice-driven instruction and support, creating a more engaging and accessible learning experience. By combining cutting-edge web technologies with real-time communication and monetization features, this LMS is designed to offer a scalable and modern solution for educators and learners alike.
+
 
 
 ✨ Key Features
