@@ -18,7 +18,7 @@ const LandingPage = () => {
               <div className="h-full w-full grid grid-cols-2">
                 <div className="border-r border-stone-300/30" />
               </div>
-            </div>
+            </div> 
           ))}
         </div>
       </div>

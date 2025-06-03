@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden w-full">
       {/* New SVG Decorative Elements with Beautiful Gradient */}
 
       {/* First SVG - Top Left Area */}
@@ -118,10 +118,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-bl from-amber-200/30 via-transparent to-orange-300/40 pointer-events-none"></div>
       <Navigation />
 
-      <div className="container mx-auto px-6 pt-20 pb-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-          {/* Left Content */}
-          <div className="space-y-8 relative min-h-[600px]">
+      <div className="container mx-auto px-4 md:px-6 pt-28 md:pt-20 pb-16 relative z-10 max-w-full">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center min-h-[80vh]">
+          {/* Left Content - Text should come first on mobile */}
+          <div className="space-y-6 md:space-y-8 relative min-h-[400px] md:min-h-[600px] order-1 w-full">
             {/* Background Line Image */}
             <div className="absolute top-0 left-0 w-full h-full -z-10">
               <Image
@@ -134,13 +134,13 @@ const Hero = () => {
               />
             </div>
 
-            {/* Content Container to ensure text stays on top */}
-            <div className="relative z-10">
-              <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium">
+            {/* Content Container */}
+            <div className="relative z-10 px-2 md:px-0">
+              <div className="inline-block bg-orange-100 text-orange-600 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium">
                 #1 Learning Platform
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight font-serif mt-8">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight font-serif mt-6 md:mt-8 break-words">
                 Smart Learning
                 <br />
                 Deeper & More
@@ -148,19 +148,19 @@ const Hero = () => {
                 <span className="text-orange-500">-Amazing</span>
               </h1>
 
-              <p className="text-lg text-gray-600 max-w-lg font-light leading-relaxed mt-8">
+              <p className="text-base md:text-lg text-gray-600 max-w-full md:max-w-lg font-light leading-relaxed mt-6 md:mt-8">
                 Proactively deploy unique intellectual capital without
                 enterprise-class bricks-and-clicks synergy. Enthusiastically
                 revolutionize intuitive.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <Button className="bg-amber-700 hover:bg-amber-950 text-white px-8 py-3 rounded-full text-lg font-medium">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6 md:mt-8 w-full">
+                <Button className="bg-amber-700 hover:bg-amber-950 text-white px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-medium w-full sm:w-auto">
                   Start Free Trial →
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3 rounded-full text-lg font-medium flex items-center gap-2"
+                  className="border-orange-500 text-orange-500 hover:bg-orange-50 px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-medium flex items-center gap-2 w-full sm:w-auto justify-center"
                 >
                   <div className="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
                     <svg
@@ -177,8 +177,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Hero Image */}
-          <div className="relative">
+          {/* Right Content - Hero Image - Should come second on mobile */}
+          <div className="relative order-2 w-full">
             {/* New decorative SVGs around the image */}
             {/* Top right blob */}
             <div className="absolute -top-20 -right-20 w-[200px] h-[200px] animate-float-slow">
@@ -287,7 +287,7 @@ const Hero = () => {
               width={600}
               height={600}
               priority
-              className="w-full h-auto relative z-10"
+              className="w-full h-auto relative z-10 max-w-full mx-auto lg:max-w-none"
             />
           </div>
         </div>
