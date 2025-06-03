@@ -4,7 +4,7 @@ import CTA from "@/components/CTA";
 import { auth } from "@clerk/nextjs/server";
 import {
   getAllCompanions,
-  getRecentSessions, 
+  getRecentSessions,
 } from "@/lib/actions/companion.actions";
 import { getSubjectColor } from "@/lib/utils";
 import LandingPage from "@/components/LandingPage";
