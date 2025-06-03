@@ -30,19 +30,14 @@ const useAnimateOnMount = (query = ".mount-fade-up", delayStep = 120) => {
 const HomePage = () => {
   // Dynamically import the Playfair Display font once
   useEffect(() => {
-    const id = "playfair-font";
-    if (!document.getElementById(id)) {
-      const link = document.createElement("link");
-      link.id = id;
-      link.rel = "stylesheet";
-      link.href =
-        "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap";
-      document.head.appendChild(link);
-    }
+    const link = document.createElement("link");
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
   }, []);
 
-  // Mount animation for fade-in of elements
-  useAnimateOnMount(".mount-fade-up", 120);
+  useAnimateOnMount();
 
   // Fetch data (simulate with Promise.resolve for demo; replace with real data-fetching in prod)
   const [companions, setCompanions] = React.useState<unknown[]>([]);
@@ -54,201 +49,232 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div
-      className="relative min-h-screen font-sans"
-      style={{ fontFamily: "'Playfair Display', ui-serif, serif" }}
-    >
-      {/* --- Decorative Gradients, Shine and Patterns --- */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        {/* Dreamy Orange-Purple Glow */}
-        <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[1200px] h-[900px] rounded-full bg-gradient-to-br from-[#fdc830]/30 via-[#f37335]/40 to-[#654ea3]/20 blur-[200px] opacity-80 animate-pulse" />
-        {/* Pink Shimmer Overlay */}
-        <div className="absolute left-[-200px] top-3/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-pink-400/20 via-fuchsia-300/20 to-transparent blur-3xl" />
-        {/* Subtle white shimmer */}
-        <div className="absolute right-[-180px] top-20 w-[380px] h-[300px] rounded-full bg-white/20 blur-2xl opacity-25" />
-        {/* Dynamic Grid Patterns */}
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,#a78bfa_1px,transparent_1px)] bg-[size:28px_28px] opacity-[0.04]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#fdc830_1px,transparent_0)] bg-[size:38px_38px] opacity-[0.03]" />
-        {/* Sparkle Grid Pattern - Top Right */}
-        <div className="absolute top-40 right-20 w-[300px] h-[300px] opacity-20">
-          <div className="absolute inset-0 bg-[linear-gradient(45deg,#fdc830_1px,transparent_1px)] bg-[size:20px_20px]" />
-          <div className="absolute inset-0 animate-pulse bg-[radial-gradient(circle_at_2px_2px,#f37335_1px,transparent_0)] bg-[size:22px_22px]" />
-          <div className="absolute inset-0 rotate-12 scale-75 animate-pulse delay-150 bg-[radial-gradient(circle_at_2px_2px,#654ea3_1px,transparent_0)] bg-[size:18px_18px]" />
-        </div>
-        {/* Sparkle Grid Pattern - Bottom Left */}
-        <div className="absolute bottom-60 left-40 w-[400px] h-[400px] opacity-15">
-          <div className="absolute inset-0 bg-[linear-gradient(-45deg,#fdc830_1px,transparent_1px)] bg-[size:25px_25px]" />
-          <div className="absolute inset-0 animate-pulse bg-[radial-gradient(circle_at_2px_2px,#f37335_1px,transparent_0)] bg-[size:28px_28px]" />
-        </div>
-        {/* Shimmering Effect */}
-        <div className="absolute top-1/4 right-1/3 w-[200px] h-[200px]">
-          <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-        </div>
-        {/* Decorative Image with sparkle overlay */}
-        <div className="absolute bottom-0 left-0 hidden md:block">
-          <div className="relative">
-            <img
-              src="/li2.png"
-              alt="Decorative"
-              width={350}
-              height={350}
-              className="object-cover opacity-55 rounded-2xl"
-            />
-            {/* Sparkle overlay for image */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#fdc830_1px,transparent_0)] bg-[size:20px_20px] opacity-10 animate-pulse" />
-          </div>
-        </div>
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Enhanced Background with Mobile Optimization */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50" />
+
+        {/* Decorative Elements - Responsive */}
+        <div className="absolute top-10 md:top-20 right-4 md:right-10 w-48 md:w-96 h-48 md:h-96 rounded-full bg-emerald-400/10 blur-3xl" />
+        <div className="absolute bottom-10 md:bottom-20 left-4 md:left-10 w-40 md:w-80 h-40 md:h-80 rounded-full bg-teal-400/10 blur-3xl" />
+
+        {/* Grid Pattern - Smaller on mobile */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#10b981_1px,transparent_0)] bg-[size:24px_24px] md:bg-[size:32px_32px] opacity-[0.03]" />
       </div>
 
-      {/* --- MAIN CONTAINER --- */}
-      <main className="relative z-10 container min-h-screen flex flex-col justify-center mx-auto px-2 sm:px-6 pt-28 pb-12">
-        {/* Header Banner */}
-        <div
-          className="mount-fade-up text-center mb-16 rounded-[30px] p-10 max-w-3xl mx-auto border border-yellow-300/25 shadow-2xl backdrop-blur-xl
-                     bg-gradient-to-br from-[#fffbfa]/80 via-[#fffaf4]/80 to-[#fffafe]/60
-                     ring-2 ring-yellow-200/30"
-          style={{
-            background:
-              "linear-gradient(111deg, rgba(253,200,48,0.11) 0%, #fff8ee80 67%, #654ea330 100%)",
-            fontWeight: "700",
-            filter: "drop-shadow(0px 2px 32px rgba(253,200,48,0.08))",
-          }}
-        >
-          <h1
-            className="text-5xl md:text-6xl font-bold mb-7"
-            style={{
-              background:
-                "linear-gradient(90deg, #fdc830 10%, #f37335 70%, #654ea3 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              filter:
-                "drop-shadow(0 6px 11px #fdc83044) drop-shadow(0 0px 10px #f3733530)",
-              fontFamily: "'Playfair Display',serif",
-              letterSpacing: "0.005em",
-            }}
-          >
-            Popular Companions
-          </h1>
-          <p
-            className="text-stone-600 max-w-2xl mx-auto text-lg font-medium tracking-tight"
-            style={{ textShadow: "0 1px 9px #fff4" }}
-          >
-            Discover your perfect{" "}
-            <span className="font-bold text-yellow-600">
-              learning companion
-            </span>{" "}
-            and start your educational journey today.
-          </p>
-        </div>
-
-        {/* Companion Cards Grid */}
-        <section className="mb-16 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative">
-          {/* Sparkle Grid for Cards Section */}
-          <div className="absolute -top-10 -right-10 w-[200px] h-[200px] opacity-10 rotate-12">
-            <div className="absolute inset-0 bg-[linear-gradient(45deg,#fdc830_1px,transparent_1px)] bg-[size:15px_15px]" />
-            <div className="absolute inset-0 animate-pulse bg-[radial-gradient(circle_at_2px_2px,#f37335_1px,transparent_0)] bg-[size:18px_18px]" />
+      {/* Main Content */}
+      <main className="relative z-10 px-4 md:px-6 lg:px-8 py-6 md:py-8">
+        <div className="max-w-7xl mx-auto space-y-8 md:space-y-12">
+          {/* Header Section */}
+          <div className="text-center md:text-left space-y-4 md:space-y-6 mount-fade-up">
+            <div className="inline-block bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium">
+              ✨ Welcome back to your learning journey
+            </div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              Popular{" "}
+              <span
+                className="text-emerald-600 italic"
+                style={{ fontFamily: '"Playfair Display", serif' }}
+              >
+                Companions
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto md:mx-0">
+              Continue your educational adventure with AI-powered tutors
+            </p>
           </div>
 
-          {companions.map((companion, i) => (
-            <div
-              key={companion.id}
-              className="mount-fade-up transition-transform duration-700 hover:-translate-y-5 group"
-              style={{
-                transitionDelay: `${i * 120}ms`,
-              }}
-            >
-              {/* Card Glow effect */}
-              <div
-                className="absolute opacity-60 
-                              left-1/2 -translate-x-1/2 -z-10 top-1/2 -translate-y-1/2
-                              w-[85%] h-[90%] blur-2xl rounded-3xl
-                              pointer-events-none
-                              group-hover:scale-105 transition-transform duration-700
-                             "
-                style={{
-                  background: `radial-gradient(circle at 60% 40%, ${getSubjectColor(
-                    companion.subject,
-                    0.16
-                  )}, transparent 66%)`,
-                }}
-              ></div>
-              {/* Glassmorphic Card */}
-              <div
-                className="backdrop-blur-lg border border-white/50 rounded-xl shadow-xl"
-                style={{
-                  background:
-                    "linear-gradient(120deg,rgba(253,200,48,0.12) 0%,rgba(255,255,255,0.76) 60%,rgba(101,78,163,0.08) 100%)",
-                  boxShadow:
-                    "0 6px 42px 3px rgba(253,200,48,0.07), 0 1.5px 26px 1px rgba(101,78,163,0.08)",
-                }}
-              >
-                <CompanionCard
-                  {...companion}
-                  color={getSubjectColor(companion.subject)}
-                />
+          {/* Companions Grid - Responsive */}
+          <section className="mount-fade-up">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {companions.map((companion, i) => (
+                <div
+                  key={companion.id}
+                  className="mount-fade-up transition-transform duration-700 hover:-translate-y-5 group"
+                  style={{
+                    transitionDelay: `${i * 120}ms`,
+                  }}
+                >
+                  {/* Card Glow effect */}
+                  <div
+                    className="absolute opacity-60 
+                                  left-1/2 -translate-x-1/2 -z-10 top-1/2 -translate-y-1/2
+                                  w-[85%] h-[90%] blur-2xl rounded-3xl
+                                  pointer-events-none
+                                  group-hover:scale-105 transition-transform duration-700
+                                 "
+                    style={{
+                      background: `radial-gradient(circle at 60% 40%, ${getSubjectColor(
+                        companion.subject,
+                        0.16
+                      )}, transparent 66%)`,
+                    }}
+                  ></div>
+                  {/* Glassmorphic Card */}
+                  <div
+                    className="backdrop-blur-lg border border-white/50 rounded-xl shadow-xl"
+                    style={{
+                      background:
+                        "linear-gradient(120deg,rgba(253,200,48,0.12) 0%,rgba(255,255,255,0.76) 60%,rgba(101,78,163,0.08) 100%)",
+                      boxShadow:
+                        "0 6px 42px 3px rgba(253,200,48,0.07), 0 1.5px 26px 1px rgba(101,78,163,0.08)",
+                    }}
+                  >
+                    <CompanionCard
+                      {...companion}
+                      color={getSubjectColor(companion.subject)}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Two Column Layout for Desktop, Stacked for Mobile */}
+          <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
+            {/* Recent Sessions - Takes full width on mobile, 2/3 on desktop */}
+            <div className="lg:col-span-2 mount-fade-up">
+              <div className="bg-white/70 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-xl border border-white/20 overflow-hidden">
+                <div className="p-6 md:p-8">
+                  {/* Mobile-friendly header */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-2 h-8 bg-gradient-to-b from-emerald-500 to-teal-500 rounded-full"></div>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                        Recently completed sessions
+                      </h2>
+                      <p className="text-gray-600 text-sm md:text-base">
+                        Continue where you left off
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Table Header - Hidden on very small screens */}
+                  <div className="hidden sm:grid grid-cols-4 gap-4 mb-4 pb-4 border-b border-gray-200">
+                    <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Lessons
+                    </div>
+                    <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Subject
+                    </div>
+                    <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Duration
+                    </div>
+                    <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Action
+                    </div>
+                  </div>
+
+                  {/* Sample Recent Sessions - Mobile Optimized */}
+                  <div className="space-y-4">
+                    {/* Session 1 */}
+                    <div className="bg-white/50 rounded-xl p-4 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 sm:gap-4 items-center">
+                        <div className="sm:col-span-1">
+                          <h3 className="font-bold text-gray-900 text-lg">
+                            SAM
+                          </h3>
+                          <p className="text-gray-600 text-sm">
+                            he will help with the problem solving
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
+                            <span className="text-pink-600">💻</span>
+                          </div>
+                          <span className="text-gray-700 font-medium text-sm sm:text-base">
+                            Computer Science
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <span className="text-emerald-600 text-sm">⏱</span>
+                          </div>
+                          <span className="text-gray-700 font-medium">
+                            10 min
+                          </span>
+                        </div>
+                        <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">
+                          Continue
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Session 2 */}
+                    <div className="bg-white/50 rounded-xl p-4 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 sm:gap-4 items-center">
+                        <div className="sm:col-span-1">
+                          <h3 className="font-bold text-gray-900 text-lg">
+                            sam
+                          </h3>
+                          <p className="text-gray-600 text-sm">
+                            wanna know about how economy actually
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span className="text-green-600">📊</span>
+                          </div>
+                          <span className="text-gray-700 font-medium text-sm sm:text-base">
+                            Economics
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <span className="text-emerald-600 text-sm">⏱</span>
+                          </div>
+                          <span className="text-gray-700 font-medium">
+                            15 min
+                          </span>
+                        </div>
+                        <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium">
+                          Continue
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
-        </section>
 
-        {/* Recent Sessions & CTA */}
-        <div className="grid lg:grid-cols-3 gap-10 relative">
-          {/* Sparkle decoration for this section */}
-          <div className="absolute -left-20 top-1/2 w-[150px] h-[150px] opacity-15">
-            <div className="absolute inset-0 bg-[linear-gradient(-60deg,#654ea3_1px,transparent_1px)] bg-[size:12px_12px]" />
-            <div className="absolute inset-0 animate-pulse delay-300 bg-[radial-gradient(circle_at_2px_2px,#fdc830_1px,transparent_0)] bg-[size:16px_16px]" />
-          </div>
+            {/* CTA Section - Stacked below on mobile */}
+            <div className="lg:col-span-1 mount-fade-up">
+              <div className="bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 rounded-2xl md:rounded-3xl shadow-xl overflow-hidden h-full min-h-[400px] relative">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.2)_0%,transparent_50%)] pointer-events-none" />
 
-          {/* Recent Session Companions */}
-          <div
-            className="mount-fade-up lg:col-span-2 backdrop-blur-lg bg-gradient-to-br from-white/70 via-yellow-50/70 to-purple-50/60 
-              rounded-2xl px-8 py-9 shadow-xl border border-yellow-200/30 ring-1 ring-yellow-100/10"
-            style={{
-              background:
-                "linear-gradient(111deg, #fffbeed0 0%, #ffe7ee 60%, #f7f0ff 100%)",
-              boxShadow:
-                "0 3px 35px 5px rgba(253,200,48,0.07), 0 1.5px 22px 1px rgba(101,78,163,0.08)",
-            }}
-          >
-            <CompanionsList
-              title={
-                <span>
-                  <span className="text-xl font-bold text-yellow-700 pr-2">
-                    Recently
-                  </span>
-                  <span className="text-stone-700">completed sessions</span>
-                </span>
-              }
-              companions={recentSessionsCompanions}
-              classNames="w-full"
-            />
-          </div>
-          {/* Shimmer CTA with glow */}
-          <div
-            className="mount-fade-up bg-gradient-to-br from-[#654ea3] via-[#fdc830] to-[#f37335] rounded-2xl shadow-2xl p-0 overflow-hidden
-            border border-purple-900/30 flex flex-col items-stretch justify-center"
-            style={{
-              minHeight: "326px",
-              boxShadow: "0px 0px 45px 2px #fdc83022, 0 2px 28px 6px #654ea335",
-              position: "relative",
-            }}
-          >
-            {/* Shimmer Overlay */}
-            <div className="absolute left-0 top-0 w-full h-full opacity-15 pointer-events-none select-none">
-              <div
-                className="w-full h-full bg-[linear-gradient(120deg,rgba(253,200,48,0.27)_0%,rgba(255,255,255,0.10)_54%,rgba(101,78,163,0.43)_95%)] animate-pulse"
-                style={{ borderRadius: "inherit" }}
-              />
-            </div>
-            {/* Glassy Card Content */}
-            <div className="relative z-10 p-8 flex flex-col h-full">
-              <CTA />
+                {/* Content */}
+                <div className="relative z-10 p-6 md:p-8 h-full flex flex-col justify-center text-center text-white">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">🚀</span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      Start Your Journey
+                    </h3>
+                    <p className="text-white/90 mb-6 text-sm md:text-base">
+                      Discover new subjects and expand your knowledge with our
+                      AI companions
+                    </p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <button className="w-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/30 px-6 py-3 rounded-xl transition-all duration-300 font-medium">
+                      Browse All Companions
+                    </button>
+                    <button className="w-full bg-white text-emerald-600 hover:bg-white/90 px-6 py-3 rounded-xl transition-all duration-300 font-medium">
+                      Create New Session
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
 
-      {/* Keyframe Animations (scoped to this page only) */}
+      {/* Keyframe Animations */}
       <style>
         {`
         .mount-fade-up {
