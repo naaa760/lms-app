@@ -1496,7 +1496,7 @@ const Hero = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 opacity-30",
+                className: "absolute inset-0 opacity-20 md:opacity-30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-6 md:grid-cols-12 gap-2 md:gap-4 h-full w-full",
                     children: Array.from({
@@ -1538,16 +1538,16 @@ const Hero = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-4 md:px-6 pt-20 pb-16 relative z-10",
+                className: "container mx-auto px-4 md:px-6 pt-28 md:pt-24 lg:pt-20 pb-16 relative z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid lg:grid-cols-2 gap-8 md:gap-12 items-center min-h-[80vh]",
+                        className: "grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-12 items-center min-h-[calc(100vh-8rem)]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-6 md:space-y-8 relative min-h-[400px] md:min-h-[600px] order-2 lg:order-1",
+                                className: "space-y-8 md:space-y-10 relative order-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute top-0 left-0 w-full h-full -z-10",
+                                        className: "absolute top-0 left-0 w-full h-full -z-10 opacity-10 md:opacity-20",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/line.png",
                                             alt: "Background Pattern",
@@ -1555,23 +1555,22 @@ const Hero = ()=>{
                                             style: {
                                                 objectFit: "contain"
                                             },
-                                            className: "opacity-20",
                                             priority: true
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/Hero.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 129,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative z-10",
+                                        className: "relative z-10 text-center lg:text-left",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "inline-block bg-orange-100 text-orange-600 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium",
+                                                className: "inline-block bg-orange-100 text-orange-600 px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm md:text-base font-medium shadow-sm",
                                                 children: "#1 Learning Platform"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
@@ -1579,7 +1578,7 @@ const Hero = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                className: "text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight font-serif mt-6 md:mt-8",
+                                                className: "text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight font-serif mt-8 md:mt-10",
                                                 children: [
                                                     "Smart Learning",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -1587,7 +1586,14 @@ const Hero = ()=>{
                                                         lineNumber: 146,
                                                         columnNumber: 17
                                                     }, this),
-                                                    "Deeper & More",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-gray-800",
+                                                        children: "Deeper & More"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/landing/Hero.tsx",
+                                                        lineNumber: 147,
+                                                        columnNumber: 17
+                                                    }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
                                                         lineNumber: 148,
@@ -1608,18 +1614,18 @@ const Hero = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-base md:text-lg text-gray-600 max-w-lg font-light leading-relaxed mt-6 md:mt-8",
-                                                children: "Proactively deploy unique intellectual capital without enterprise-class bricks-and-clicks synergy. Enthusiastically revolutionize intuitive."
+                                                className: "text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed mt-8 md:mt-10 px-2 md:px-0",
+                                                children: "Proactively deploy unique intellectual capital without enterprise-class bricks-and-clicks synergy. Enthusiastically revolutionize intuitive learning experiences."
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
                                                 lineNumber: 152,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex flex-col sm:flex-row gap-4 mt-6 md:mt-8",
+                                                className: "flex flex-col sm:flex-row gap-4 md:gap-6 mt-10 md:mt-12 justify-center lg:justify-start",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                                        className: "bg-amber-700 hover:bg-amber-950 text-white px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-medium w-full sm:w-auto",
+                                                        className: "bg-gradient-to-r from-amber-700 to-amber-800 hover:from-amber-800 hover:to-amber-900 text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl font-medium w-full sm:w-auto shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105",
                                                         children: "Start Free Trial →"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
@@ -1628,10 +1634,10 @@ const Hero = ()=>{
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
                                                         variant: "outline",
-                                                        className: "border-orange-500 text-orange-500 hover:bg-orange-50 px-6 md:px-8 py-3 rounded-full text-base md:text-lg font-medium flex items-center gap-2 w-full sm:w-auto justify-center",
+                                                        className: "border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl font-medium flex items-center gap-3 w-full sm:w-auto justify-center shadow-lg hover:shadow-xl transition-all duration-300",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center",
+                                                                className: "w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                                     className: "w-4 h-4 text-white",
                                                                     fill: "currentColor",
@@ -1653,7 +1659,7 @@ const Hero = ()=>{
                                                                 lineNumber: 166,
                                                                 columnNumber: 19
                                                             }, this),
-                                                            "How It Work"
+                                                            "How It Works"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
@@ -1675,11 +1681,11 @@ const Hero = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/landing/Hero.tsx",
-                                lineNumber: 125,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative order-1 lg:order-2",
+                                className: "relative order-2 mt-8 lg:mt-0",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "hidden md:block absolute -top-10 lg:-top-20 -right-8 lg:-right-20 w-[120px] h-[120px] lg:w-[200px] lg:h-[200px] animate-float-slow",
@@ -1735,8 +1741,7 @@ const Hero = ()=>{
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     fill: "url(#blobGradient1)",
-                                                    d: "M42.7,-54.9C53,-51.3,57.3,-35.7,57,-22C56.7,-8.3,51.8,3.5,45.1,11.7C38.4,19.9,29.8,24.6,22,29.4C14.2,34.2,7.1,39.2,-1.9,41.8C-10.9,44.4,-21.8,44.8,-27.1,39.1C-32.3,33.5,-31.9,21.8,-28.8,13.5C-25.8,5.2,-20.2,0.3,-21.2,-10C-22.2,-20.3,-29.8,-35.9,-27.3,-42C-24.9,-48.1,-12.5,-44.8,1.9,-47.4C16.2,-50,32.4,-58.4,42.7,-54.9Z",
-                                                    transform: "translate(100 100)"
+                                                    d: "M42.7,-54.9C53,-51.3,57.3,-35.7,57,-22C56.7,-8.3,51.8,3.5,45.1,11.7C38.4,19.9,29.8,24.6,22,29.4C14.2,34.2,7.1,39.2,-1.9,41.8C-10.9,44.4,-21.8,44.8,-27.1,39.1C-32.3,33.5,-31.9,21.8,-28.8,13.5C-25.8,5.2,-20.2,0.3,-21.2,-10C-22.2,-20.3,-29.8,-35.9,-27.3,-42C-24.9,-48.1,-12.5,-44.8,1.9,-47.4C16.2,-50,32.4,-58.4,42.7,-54.9Z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
                                                     lineNumber: 200,
@@ -1754,7 +1759,7 @@ const Hero = ()=>{
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute -bottom-12 md:-bottom-24 -left-8 md:-left-16 w-[100px] h-[100px] md:w-[180px] md:h-[180px] animate-float",
+                                        className: "absolute -bottom-12 md:-bottom-24 -left-8 md:-left-16 w-[100px] h-[100px] md:w-[180px] md:h-[180px] animate-float opacity-40 md:opacity-60",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                             viewBox: "0 0 200 200",
                                             xmlns: "http://www.w3.org/2000/svg",
@@ -1773,7 +1778,7 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 219,
+                                                                lineNumber: 218,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1782,7 +1787,7 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 220,
+                                                                lineNumber: 219,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1791,42 +1796,41 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 221,
+                                                                lineNumber: 220,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
-                                                        lineNumber: 212,
+                                                        lineNumber: 211,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 211,
+                                                    lineNumber: 210,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     fill: "url(#blobGradient2)",
-                                                    d: "M37.6,-66.8C49.9,-58.1,61.7,-50.3,56.2,-39.3C50.6,-28.3,27.8,-14.1,26.1,-1C24.4,12.2,43.9,24.4,50.4,37C56.8,49.7,50.4,62.9,39.8,57.6C29.3,52.2,14.6,28.4,0.7,27.2C-13.3,26,-26.6,47.6,-31.5,49.7C-36.4,51.8,-32.9,34.4,-28.7,22.9C-24.4,11.3,-19.3,5.7,-23.8,-2.6C-28.3,-10.8,-42.3,-21.7,-40.5,-22.6C-38.6,-23.6,-21,-14.7,-11.6,-25C-2.2,-35.3,-1.1,-64.9,5.8,-74.9C12.7,-84.9,25.4,-75.5,37.6,-66.8Z",
-                                                    transform: "translate(100 100)"
+                                                    d: "M37.6,-66.8C49.9,-58.1,61.7,-50.3,56.2,-39.3C50.6,-28.3,27.8,-14.1,26.1,-1C24.4,12.2,43.9,24.4,50.4,37C56.8,49.7,50.4,62.9,39.8,57.6C29.3,52.2,14.6,28.4,0.7,27.2C-13.3,26,-26.6,47.6,-31.5,49.7C-36.4,51.8,-32.9,34.4,-28.7,22.9C-24.4,11.3,-19.3,5.7,-23.8,-2.6C-28.3,-10.8,-42.3,-21.7,-40.5,-22.6C-38.6,-23.6,-21,-14.7,-11.6,-25C-2.2,-35.3,-1.1,-64.9,5.8,-74.9C12.7,-84.9,25.4,-75.5,37.6,-66.8Z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 224,
+                                                    lineNumber: 223,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/landing/Hero.tsx",
-                                            lineNumber: 210,
+                                            lineNumber: 209,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 208,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hidden sm:block absolute -top-8 md:-top-16 -left-10 md:-left-20 w-[100px] h-[100px] md:w-[160px] md:h-[160px] animate-float-delayed",
+                                        className: "hidden sm:block absolute -top-8 md:-top-16 -left-10 md:-left-20 w-[100px] h-[100px] md:w-[160px] md:h-[160px] animate-float-delayed opacity-30 md:opacity-50",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                             viewBox: "0 0 200 200",
                                             xmlns: "http://www.w3.org/2000/svg",
@@ -1845,7 +1849,7 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 243,
+                                                                lineNumber: 241,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1854,7 +1858,7 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 244,
+                                                                lineNumber: 242,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1863,42 +1867,41 @@ const Hero = ()=>{
                                                                 stopOpacity: "0.1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/Hero.tsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 243,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
-                                                        lineNumber: 236,
+                                                        lineNumber: 234,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 235,
+                                                    lineNumber: 233,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     fill: "url(#blobGradient3)",
-                                                    d: "M9.4,-20.7C9.6,-16.2,5.4,-8.4,15.4,-4.4C25.4,-0.4,49.6,-0.2,59.4,5.6C69.1,11.5,64.3,22.9,56.2,30.1C48,37.3,36.5,40.3,26.6,34.6C16.6,28.9,8.3,14.6,1.3,12.3C-5.6,9.9,-11.3,19.6,-23.8,26.8C-36.4,34,-55.9,38.8,-56.8,33.9C-57.7,29,-39.9,14.5,-38.6,0.7C-37.3,-13,-52.5,-26,-53,-33.2C-53.4,-40.5,-39.2,-41.9,-27.9,-40C-16.6,-38.1,-8.3,-32.9,-1.9,-29.7C4.6,-26.5,9.2,-25.2,9.4,-20.7Z",
-                                                    transform: "translate(100 100)"
+                                                    d: "M9.4,-20.7C9.6,-16.2,5.4,-8.4,15.4,-4.4C25.4,-0.4,49.6,-0.2,59.4,5.6C69.1,11.5,64.3,22.9,56.2,30.1C48,37.3,36.5,40.3,26.6,34.6C16.6,28.9,8.3,14.6,1.3,12.3C-5.6,9.9,-11.3,19.6,-23.8,26.8C-36.4,34,-55.9,38.8,-56.8,33.9C-57.7,29,-39.9,14.5,-38.6,0.7C-37.3,-13,-52.5,-26,-53,-33.2C-53.4,-40.5,-39.2,-41.9,-27.9,-40C-16.6,-38.1,-8.3,-32.9,-1.9,-29.7C4.6,-26.5,9.2,-25.2,9.4,-20.7Z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 248,
+                                                    lineNumber: 246,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/landing/Hero.tsx",
-                                            lineNumber: 234,
+                                            lineNumber: 232,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 231,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hidden sm:block absolute -bottom-5 md:-bottom-10 -right-5 md:-right-10 w-[80px] h-[80px] md:w-[140px] md:h-[140px] animate-float-slow",
+                                        className: "hidden sm:block absolute -bottom-5 md:-bottom-10 -right-5 md:-right-10 w-[80px] h-[80px] md:w-[140px] md:h-[140px] animate-float-slow opacity-40 md:opacity-60",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                             viewBox: "0 0 200 200",
                                             xmlns: "http://www.w3.org/2000/svg",
@@ -1918,7 +1921,7 @@ const Hero = ()=>{
                                                                     stopOpacity: "0.3"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                                    lineNumber: 267,
+                                                                    lineNumber: 264,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1927,7 +1930,7 @@ const Hero = ()=>{
                                                                     stopOpacity: "0.2"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                                    lineNumber: 268,
+                                                                    lineNumber: 265,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1936,13 +1939,13 @@ const Hero = ()=>{
                                                                     stopOpacity: "0.1"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                                    lineNumber: 269,
+                                                                    lineNumber: 266,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/landing/Hero.tsx",
-                                                            lineNumber: 260,
+                                                            lineNumber: 257,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("filter", {
@@ -1953,59 +1956,65 @@ const Hero = ()=>{
                                                                     stdDeviation: "1"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                                    lineNumber: 272,
+                                                                    lineNumber: 269,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("feColorMatrix", {
                                                                     values: "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                                    lineNumber: 273,
+                                                                    lineNumber: 270,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/landing/Hero.tsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 268,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 259,
+                                                    lineNumber: 256,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     fill: "url(#blobGradient4)",
                                                     filter: "url(#shimmer)",
-                                                    d: "M42.7,-54.9C53,-51.3,57.3,-35.7,57,-22C56.7,-8.3,51.8,3.5,45.1,11.7C38.4,19.9,29.8,24.6,22,29.4C14.2,34.2,7.1,39.2,-1.9,41.8C-10.9,44.4,-21.8,44.8,-27.1,39.1C-32.3,33.5,-31.9,21.8,-28.8,13.5C-25.8,5.2,-20.2,0.3,-21.2,-10C-22.2,-20.3,-29.8,-35.9,-27.3,-42C-24.9,-48.1,-12.5,-44.8,1.9,-47.4C16.2,-50,32.4,-58.4,42.7,-54.9Z",
-                                                    transform: "translate(100 100)"
+                                                    d: "M42.7,-54.9C53,-51.3,57.3,-35.7,57,-22C56.7,-8.3,51.8,3.5,45.1,11.7C38.4,19.9,29.8,24.6,22,29.4C14.2,34.2,7.1,39.2,-1.9,41.8C-10.9,44.4,-21.8,44.8,-27.1,39.1C-32.3,33.5,-31.9,21.8,-28.8,13.5C-25.8,5.2,-20.2,0.3,-21.2,-10C-22.2,-20.3,-29.8,-35.9,-27.3,-42C-24.9,-48.1,-12.5,-44.8,1.9,-47.4C16.2,-50,32.4,-58.4,42.7,-54.9Z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/Hero.tsx",
-                                                    lineNumber: 276,
+                                                    lineNumber: 273,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/landing/Hero.tsx",
-                                            lineNumber: 258,
+                                            lineNumber: 255,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 254,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/girls.png",
-                                        alt: "Learning Platform",
-                                        width: 600,
-                                        height: 600,
-                                        priority: true,
-                                        className: "w-full h-auto relative z-10 max-w-md mx-auto lg:max-w-none"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative bg-gradient-to-br from-amber-50/50 to-orange-50/50 rounded-3xl p-4 md:p-6 lg:p-8 shadow-2xl",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/girls.png",
+                                            alt: "Learning Platform",
+                                            width: 600,
+                                            height: 600,
+                                            priority: true,
+                                            className: "w-full h-auto relative z-10 max-w-sm mx-auto md:max-w-md lg:max-w-none rounded-2xl"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/landing/Hero.tsx",
+                                            lineNumber: 283,
+                                            columnNumber: 15
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
-                                        lineNumber: 285,
+                                        lineNumber: 282,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -2017,54 +2026,55 @@ const Hero = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/landing/Hero.tsx",
-                        lineNumber: 123,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-16 md:mt-20",
+                        className: "mt-20 md:mt-24 lg:mt-32",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-center mb-6 md:mb-8",
+                                className: "text-center mb-10 md:mb-12",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "bg-teal-100 text-teal-600 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium",
+                                    className: "bg-gradient-to-r from-teal-500 to-cyan-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-base font-medium shadow-lg",
                                     children: "About Me"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/Hero.tsx",
-                                    lineNumber: 299,
+                                    lineNumber: 298,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Hero.tsx",
-                                lineNumber: 298,
+                                lineNumber: 297,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-center text-base md:text-lg text-gray-600 max-w-3xl mx-auto mb-8 md:mb-12 font-light leading-relaxed px-4",
+                                className: "text-center text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 md:mb-16 font-light leading-relaxed px-4",
                                 children: [
-                                    "I am passionate about empowering learners ",
+                                    "I am passionate about empowering learners",
+                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        className: "text-orange-600",
                                         children: "Worldwide"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Hero.tsx",
                                         lineNumber: 305,
-                                        columnNumber: 55
+                                        columnNumber: 13
                                     }, this),
-                                    " ",
-                                    "with high-quality, accessible & engaging education. My mission is to offer a diverse range of courses."
+                                    " with high-quality, accessible & engaging education. My mission is to offer a diverse range of courses."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/landing/Hero.tsx",
-                                lineNumber: 304,
+                                lineNumber: 303,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto px-4",
+                                className: "grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto px-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-center",
+                                        className: "text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif",
+                                                className: "text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent mb-3 font-serif",
                                                 children: "3+"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
@@ -2072,7 +2082,7 @@ const Hero = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-600 font-light text-sm md:text-base",
+                                                className: "text-gray-600 font-medium text-base md:text-lg leading-relaxed",
                                                 children: [
                                                     "Years of eLearning",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -2094,10 +2104,10 @@ const Hero = ()=>{
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-center",
+                                        className: "text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif",
+                                                className: "text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent mb-3 font-serif",
                                                 children: "10+"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
@@ -2105,7 +2115,7 @@ const Hero = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-600 font-light text-sm md:text-base",
+                                                className: "text-gray-600 font-medium text-base md:text-lg leading-relaxed",
                                                 children: [
                                                     "Students Enrolled in",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -2127,10 +2137,10 @@ const Hero = ()=>{
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-center",
+                                        className: "text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-serif",
+                                                className: "text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 font-serif",
                                                 children: "10+"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
@@ -2138,7 +2148,7 @@ const Hero = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-gray-600 font-light text-sm md:text-base",
+                                                className: "text-gray-600 font-medium text-base md:text-lg leading-relaxed",
                                                 children: [
                                                     "Experienced Teacher's",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -2168,13 +2178,13 @@ const Hero = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/landing/Hero.tsx",
-                        lineNumber: 297,
+                        lineNumber: 296,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/landing/Hero.tsx",
-                lineNumber: 122,
+                lineNumber: 123,
                 columnNumber: 7
             }, this)
         ]
