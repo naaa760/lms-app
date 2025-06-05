@@ -34,17 +34,23 @@ const SubjectFilter = () => {
       });
     }
     router.push(newUrl, { scroll: false });
-  }, [subject]);
+  }, [subject, router, searchParams]);
 
   return (
     <Select onValueChange={setSubject} value={subject}>
-      <SelectTrigger className="input capitalize">
+      <SelectTrigger className="w-full sm:w-auto min-w-0 sm:min-w-[140px] md:min-w-[160px] bg-white/80 backdrop-blur-sm border border-stone-300/50 rounded-lg px-3 py-2 md:py-2.5 shadow-sm hover:shadow-md transition-all duration-300 text-sm md:text-base">
         <SelectValue placeholder="Subject" />
       </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="all">All subjects</SelectItem>
+      <SelectContent className="bg-white/95 backdrop-blur-sm border border-stone-300/50 rounded-lg shadow-lg">
+        <SelectItem value="all" className="capitalize text-sm md:text-base">
+          All subjects
+        </SelectItem>
         {subjects.map((subject) => (
-          <SelectItem key={subject} value={subject} className="capitalize">
+          <SelectItem
+            key={subject}
+            value={subject}
+            className="capitalize text-sm md:text-base"
+          >
             {subject}
           </SelectItem>
         ))}

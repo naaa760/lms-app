@@ -1,0 +1,15 @@
+{
+  "sorted_middleware": [],
+  "middleware": {},
+  "instrumentation": {
+    "files": [
+      "server/edge/chunks/node_modules_@sentry_195972c1._.js",
+      "server/edge/chunks/node_modules_@sentry_vercel-edge_build_esm_index_e7f22037.js",
+      "server/edge/chunks/node_modules_3ff5fddd._.js",
+      "server/edge/chunks/[root-of-the-server]__1b522155._.js",
+      "server/edge/chunks/edge-wrapper_abc9d33c.js"
+    ],
+    "name": "instrumentation"
+  },
+  "functions": {}
+}

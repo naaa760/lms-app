@@ -11,7 +11,7 @@ const SearchInput = () => {
   const searchParams = useSearchParams();
   const query = searchParams.get("topic") || "";
 
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(query);
 
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
@@ -34,14 +34,22 @@ const SearchInput = () => {
         }
       }
     }, 500);
+
+    return () => clearTimeout(delayDebounceFn);
   }, [searchQuery, router, searchParams, pathname]);
 
   return (
-    <div className="relative border border-black rounded-lg items-center flex gap-2 px-2 py-1 h-fit">
-      <Image src="/icons/search.svg" alt="search" width={15} height={15} />
+    <div className="relative bg-white/80 backdrop-blur-sm border border-stone-300/50 rounded-lg items-center flex gap-2 px-3 py-2 md:py-2.5 h-fit w-full sm:w-auto min-w-0 sm:min-w-[200px] md:min-w-[250px] shadow-sm hover:shadow-md transition-all duration-300">
+      <Image
+        src="/icons/search.svg"
+        alt="search"
+        width={16}
+        height={16}
+        className="flex-shrink-0 opacity-60"
+      />
       <input
         placeholder="Search companions..."
-        className="outline-none"
+        className="outline-none bg-transparent w-full text-sm md:text-base placeholder:text-stone-500"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
