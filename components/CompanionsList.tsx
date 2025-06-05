@@ -1,11 +1,3 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { cn, getSubjectColor } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,74 +15,118 @@ const CompanionsList = ({
 }: CompanionsListProps) => {
   return (
     <article className={cn("companion-list", classNames)}>
-      <h2 className="font-bold text-3xl">{title}</h2>
+      <h2 className="font-bold text-2xl md:text-3xl mb-4 md:mb-6">{title}</h2>
 
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="text-lg w-2/3">Lessons</TableHead>
-            <TableHead className="text-lg">Subject</TableHead>
-            <TableHead className="text-lg text-right">Duration</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {companions?.map(({ id, subject, name, topic, duration }) => (
-            <TableRow key={id}>
-              <TableCell>
-                <Link href={`/companions/${id}`}>
-                  <div className="flex items-center gap-2">
+      {/* Desktop Table View - Hidden on mobile */}
+      <div className="hidden md:block">
+        <div className="bg-white/50 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-12 gap-4 p-4 bg-stone-100/50 font-semibold text-stone-600">
+            <div className="col-span-6 text-lg">Lessons</div>
+            <div className="col-span-3 text-lg">Subject</div>
+            <div className="col-span-3 text-lg text-right">Duration</div>
+          </div>
+          <div className="divide-y divide-stone-200/50">
+            {companions?.map(({ id, subject, name, topic, duration }) => (
+              <Link href={`/companions/${id}`} key={id}>
+                <div className="grid grid-cols-12 gap-4 p-4 hover:bg-white/50 transition-colors cursor-pointer">
+                  <div className="col-span-6 flex items-center gap-3">
                     <div
-                      className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden"
+                      className="w-16 h-16 flex items-center justify-center rounded-lg flex-shrink-0"
                       style={{ backgroundColor: getSubjectColor(subject) }}
                     >
                       <Image
                         src={`/icons/${subject}.svg`}
                         alt={subject}
-                        width={35}
-                        height={35}
+                        width={28}
+                        height={28}
                       />
                     </div>
-                    <div className="flex flex-col gap-2">
-                      <p className="font-bold text-2xl">{name}</p>
-                      <p className="text-lg">{topic}</p>
+                    <div>
+                      <p className="font-bold text-xl text-stone-900">{name}</p>
+                      <p className="text-stone-600">{topic}</p>
                     </div>
                   </div>
-                </Link>
-              </TableCell>
-              <TableCell>
-                <div className="subject-badge w-fit max-md:hidden">
-                  {subject}
+                  <div className="col-span-3 flex items-center">
+                    <div
+                      className="px-3 py-1 rounded-full text-sm font-medium text-white"
+                      style={{ backgroundColor: getSubjectColor(subject) }}
+                    >
+                      {subject}
+                    </div>
+                  </div>
+                  <div className="col-span-3 flex items-center justify-end">
+                    <div className="flex items-center gap-2">
+                      <p className="text-xl font-semibold text-stone-900">
+                        {duration}
+                      </p>
+                      <span className="text-stone-600">mins</span>
+                    </div>
+                  </div>
                 </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Card View - Hidden on desktop */}
+      <div className="md:hidden space-y-3">
+        {companions?.map(({ id, subject, name, topic, duration }) => (
+          <Link href={`/companions/${id}`} key={id}>
+            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-stone-200/50 hover:shadow-lg transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
                 <div
-                  className="flex items-center justify-center rounded-lg w-fit p-2 md:hidden"
+                  className="w-12 h-12 flex items-center justify-center rounded-lg flex-shrink-0"
                   style={{ backgroundColor: getSubjectColor(subject) }}
                 >
                   <Image
                     src={`/icons/${subject}.svg`}
                     alt={subject}
-                    width={18}
-                    height={18}
+                    width={20}
+                    height={20}
                   />
                 </div>
-              </TableCell>
-              <TableCell>
-                <div className="flex items-center gap-2 w-full justify-end">
-                  <p className="text-2xl">
-                    {duration} <span className="max-md:hidden">mins</span>
-                  </p>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-lg text-stone-900 truncate">
+                    {name}
+                  </h3>
+                  <p className="text-sm text-stone-600 truncate">{topic}</p>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center">
+                <div
+                  className="px-3 py-1 rounded-full text-xs font-medium text-white"
+                  style={{ backgroundColor: getSubjectColor(subject) }}
+                >
+                  {subject}
+                </div>
+                <div className="flex items-center gap-2">
                   <Image
                     src="/icons/clock.svg"
-                    alt="minutes"
-                    width={14}
-                    height={14}
-                    className="md:hidden"
+                    alt="duration"
+                    width={16}
+                    height={16}
+                    className="opacity-60"
                   />
+                  <span className="text-lg font-semibold text-stone-900">
+                    {duration}
+                  </span>
+                  <span className="text-sm text-stone-600">mins</span>
                 </div>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* Empty State */}
+      {!companions ||
+        (companions.length === 0 && (
+          <div className="text-center py-8 text-stone-500">
+            <p>No companions found</p>
+          </div>
+        ))}
     </article>
   );
 };
