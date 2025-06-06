@@ -5,7 +5,9 @@ A smart, seamless, and powerful platform that delivers personalized learning exp
 
 ![image](https://github.com/user-attachments/assets/03dc1956-ee0e-4d0b-9577-a0d51f1ffaec)
 
-https://lms-app-navy.vercel.app/
+❗ Demo video of the Project: https://drive.google.com/file/d/1R4gZ1vKUudm5vOJcM3bDc1S_SnvH10k7/view
+
+❗ Project link: https://lms-app-navy.vercel.app/
 
 ## ✨ Features
 
